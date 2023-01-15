@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  a:active,
+  a:hover,
+  a {
+    text-decoration: none;
+    color: #666;
+  }
+
+  .App {
+    width: 1290px;
+    position: relative;
+    margin-top: 50px;
+    font-family: "Montserrat", sans-serif;
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+    }
+  }
+}
