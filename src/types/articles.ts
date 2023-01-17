@@ -1,5 +1,4 @@
 import { Article } from "../interfaces/interfaces";
-import { SingleArticleState } from "../store/reducers/articleReducer";
 
 export interface ArticleState {
   articles: any[];

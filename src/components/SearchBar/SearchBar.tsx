@@ -10,7 +10,7 @@ import { changeInputValue } from "../../store/action-creator/searchInputValue";
 const SearchBar: React.FC = () => {
   const dispath = useDispatch();
   const inputValue = useSelector((state: any) => state.value.value);
-  const { articles, error, loading } = useTypedSelector(
+  const { articles } = useTypedSelector(
     (state) => state.articles
   );
 

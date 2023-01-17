@@ -15,7 +15,6 @@ const Article: React.FC = () => {
     fetchArticle(Number(id));
   }, []);
   const { article } = useTypedSelector((state) => state.article);
-  console.log(article);
   return (
     <div className="wrapper">
       <div className="img-wrapper">
