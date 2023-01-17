@@ -1,6 +1,6 @@
 import { useEffect, useCallback, useMemo } from "react";
 import { useActions } from "../../hooks/useActions";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useTypedSelector } from "../../hooks/useTypedSelector";
 import CalendarIcon from "../../icons/CalendarIcon";
 import ArrowLeft from "../../icons/ArrowLeft";
@@ -16,11 +16,8 @@ import "./ArticleCards.scss";
 import HightLight from "../HightLight/HightLight";
 
 const ArticleCards: React.FC = () => {
-  const dispath = useDispatch();
   const inputValue = useSelector((state: any) => state.value.value);
-  const { articles, error, loading } = useTypedSelector(
-    (state) => state.articles
-  );
+  const { articles } = useTypedSelector((state) => state.articles);
   const { fetchArticles, fetchArticle } = useActions();
 
   useEffect(() => {
